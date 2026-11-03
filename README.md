@@ -40,7 +40,7 @@
 - **主迴圈分工**：本專案採用 Polling 輪詢機制管理按鈕事件與時序，未啟用 EXTI 或 Timer ISR 中斷。
 
 ## 8. 實作照片：
-![硬體接線與測試](docs/board.jpg)
+![硬體接線與測試](docs/IMG_4593.jpeg)
 *圖 1：STM32 NUCLEO-G474RE 搭配麵包板實體接線 (PA0 按鈕、PA8 濕度燈、PA9 馬達燈)*
 
 ## 9. AI 使用說明：
