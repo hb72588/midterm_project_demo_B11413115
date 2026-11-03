@@ -16,12 +16,12 @@
 - **自動澆水復原 (第 5 次按下)**：當濕度降至最低並再次按下時，PA8 熄滅、PA9 亮起 (馬達運作)；PA8 於 5 秒內由 0% 平滑漸亮恢復至 100%，隨後 PA9 熄滅並重置計數器。
 
 ## 4. 用到的技術：第 3 ~ 7 週勾選表
-- **☑ GPIO 輸出**：PA9 控制馬達指示燈 (B燈)
-- **☑ GPIO 輸入**：PA0 讀取外接按鈕 (開啟內部 Pull-up)
-- **☑ 複用功能 AF**：PA8 設定為 Alternate Function (TIM1_CH1 PWM)
-- **☑ PLL 170 MHz**：SystemClock_Config() 配置系統主時脈至 170 MHz
-- **☑ 軟體去彈跳**：PA0 按鈕搭配 HAL_Delay(30) 消抖與 while 迴圈放開檢測
-- **☑ PWM**：PA8 使用 TIM1_CH1 (PSC=169, ARR=999) 控制亮度變換與 5 秒漸亮復原
+- ** GPIO 輸出**：PA9 控制馬達指示燈 (B燈)
+- ** GPIO 輸入**：PA0 讀取外接按鈕 (開啟內部 Pull-up)
+- ** 複用功能 AF**：PA8 設定為 Alternate Function (TIM1_CH1 PWM)
+- ** PLL 170 MHz**：SystemClock_Config() 配置系統主時脈至 170 MHz
+- ** 軟體去彈跳**：PA0 按鈕搭配 HAL_Delay(30) 消抖與 while 迴圈放開檢測
+- ** PWM**：PA8 使用 TIM1_CH1 (PSC=169, ARR=999) 控制亮度變換與 5 秒漸亮復原
 
 ## 5. 腳位表：用到的每支腳與用途
 - **PA0** = GPIO Input (Pull-up) | 外接實體按鈕 (按下接 GND)
